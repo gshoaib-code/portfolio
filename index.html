@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghaniya Shoaib | UI/UX Designer</title>
+<meta name="description" content="Portfolio of Ghaniya Shoaib, UI/UX designer and Computer Science student at SZABIST Islamabad. Case studies, experience, resume and recommendation letter.">
+<meta property="og:title" content="Ghaniya Shoaib | UI/UX Designer">
+<meta property="og:description" content="UI/UX design case studies, experience and resume.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231E3A5F'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='white' font-family='Georgia'%3EGS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--color-bg:#F7F6F2;--color-surface:#fff;--color-text:#0F1B2D;--color-text-muted:#4A5568;--color-border:#E2E0D8;--color-accent:#1E3A5F;--color-accent-hover:#162C48;--color-on-accent:#fff;
+--font-head:"Source Serif 4",Georgia,serif;--font-body:Inter,system-ui,sans-serif;
+--fs-sm:.875rem;--fs-base:1.0625rem;--fs-lg:1.25rem;--fs-xl:1.75rem;--fs-2xl:clamp(2rem,5vw,3.25rem);
+--sp-1:.25rem;--sp-2:.5rem;--sp-3:1rem;--sp-4:1.5rem;--sp-5:2.5rem;--sp-6:4rem;--sp-7:6rem;--radius:6px}
+:root[data-theme=dark]{--color-bg:#0E1624;--color-surface:#152033;--color-text:#E8ECF2;--color-text-muted:#A3AEC0;--color-border:#26324A;--color-accent:#8DB3E8;--color-accent-hover:#B2CCF0;--color-on-accent:#0E1624}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--color-bg:#0E1624;--color-surface:#152033;--color-text:#E8ECF2;--color-text-muted:#A3AEC0;--color-border:#26324A;--color-accent:#8DB3E8;--color-accent-hover:#B2CCF0;--color-on-accent:#0E1624}}
+*{box-sizing:border-box}html{scroll-padding-top:5rem}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font:var(--fs-base)/1.65 var(--font-body)}
+h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.2;margin:0 0 var(--sp-3)}
+h1{font-size:var(--fs-2xl)}h2{font-size:var(--fs-xl);margin-top:var(--sp-5)}h3{font-size:var(--fs-lg)}
+p,ul{max-width:68ch;margin:0 0 var(--sp-3)}ul{padding-left:1.2rem}li{margin-bottom:.4rem}
+a{color:var(--color-accent);text-underline-offset:3px}a:hover{color:var(--color-accent-hover)}
+:focus-visible{outline:3px solid var(--color-accent);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--color-accent);color:var(--color-on-accent);padding:var(--sp-2) var(--sp-3);z-index:10}.skip:focus{left:0}
+.wrap{max-width:68rem;margin:0 auto;padding:0 var(--sp-4)}
+header{border-bottom:1px solid var(--color-border);position:sticky;top:0;background:var(--color-bg);z-index:5}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--sp-2) var(--sp-4);padding:var(--sp-3) 0}
+.brand{font-family:var(--font-head);font-weight:600;font-size:var(--fs-lg);color:var(--color-text);text-decoration:none}
+nav ul{display:flex;flex-wrap:wrap;gap:var(--sp-3);list-style:none;margin:0;padding:0;max-width:none;align-items:center}nav li{margin:0}
+nav a{color:var(--color-text-muted);text-decoration:none;font-size:var(--fs-sm);font-weight:500;padding:var(--sp-1) 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current=page]{color:var(--color-accent);border-color:var(--color-accent)}
+.btn{display:inline-block;padding:.65rem 1.1rem;border-radius:var(--radius);border:1px solid var(--color-accent);background:var(--color-accent);color:var(--color-on-accent);font:500 var(--fs-sm) var(--font-body);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--color-accent-hover);color:var(--color-on-accent)}
+.btn.alt{background:transparent;color:var(--color-accent)}.btn.alt:hover{background:var(--color-surface)}
+.row{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin:var(--sp-4) 0}
+.page{padding:var(--sp-6) 0 var(--sp-7)}.page[hidden]{display:none}
+.lead{font-size:var(--fs-lg);color:var(--color-text-muted)}
+.grid{display:grid;gap:var(--sp-4);grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));margin:var(--sp-4) 0}
+.card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--sp-4)}
+.card h3{margin-bottom:var(--sp-2)}.card p{color:var(--color-text-muted);font-size:var(--fs-sm)}
+.tag{display:inline-block;border:1px solid var(--color-border);border-radius:99px;padding:.1rem .7rem;font-size:var(--fs-sm);color:var(--color-text-muted);margin:0 .4rem .4rem 0}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:var(--sp-3);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:var(--sp-3) 0;margin:var(--sp-4) 0}
+.meta dt{font-size:var(--fs-sm);color:var(--color-text-muted)}.meta dd{margin:0;font-weight:500}
+.ph{border:1px dashed var(--color-text-muted);border-radius:var(--radius);padding:var(--sp-3);color:var(--color-text-muted);font-size:var(--fs-sm);max-width:68ch;margin:0 0 var(--sp-3)}
+.role{border-left:2px solid var(--color-accent);padding-left:var(--sp-4);margin:var(--sp-4) 0}.role h3{margin-bottom:var(--sp-1)}.role .when{color:var(--color-text-muted);font-size:var(--fs-sm);margin-bottom:var(--sp-2)}
+label{display:block;font-weight:500;margin-bottom:var(--sp-1)}
+input,textarea{width:100%;max-width:36rem;padding:.65rem;border:1px solid var(--color-text-muted);border-radius:var(--radius);background:var(--color-surface);color:var(--color-text);font:inherit;margin-bottom:var(--sp-3)}
+.hp{position:absolute;left:-9999px}.msg{font-weight:500}.err{color:#B3261E}:root[data-theme=dark] .err{color:#FF8A80}
+footer{border-top:1px solid var(--color-border);padding:var(--sp-5) 0;color:var(--color-text-muted);font-size:var(--fs-sm)}
+footer .row{margin:var(--sp-3) 0}
+button.theme{background:none;border:1px solid var(--color-border);color:var(--color-text-muted);border-radius:var(--radius);padding:.3rem .7rem;font:var(--fs-sm) var(--font-body);cursor:pointer}
+@media(prefers-reduced-motion:no-preference){.btn,a{transition:background .15s,color .15s}}
+@media print{header,footer{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap bar">
+<a class="brand" href="#/">Ghaniya Shoaib</a>
+<nav aria-label="Primary"><ul>
+<li><a href="#/">Home</a></li><li><a href="#/work">Work</a></li><li><a href="#/about">About</a></li><li><a href="#/contact">Contact</a></li>
+<li><a href="assets/docs/Ghaniya_Shoaib_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+<li><button class="theme" id="theme" type="button" aria-label="Switch colour theme">Theme</button></li>
+</ul></nav></div></header>
+
+<main id="main" tabindex="-1" class="wrap">
+
+<section class="page" data-page="home" data-title="Ghaniya Shoaib | UI/UX Designer">
+<h1>Ghaniya Shoaib</h1>
+<p class="lead">UI/UX Designer</p>
+<p>I design with research and systems: personas and journey maps first, then design tokens, then screens with their states. I am a final-stage Computer Science student at SZABIST Islamabad, with remote experience in UI/UX design and in B2B communication and operations.</p>
+<div class="row">
+<a class="btn" href="assets/docs/Ghaniya_Shoaib_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+<a class="btn alt" href="assets/docs/Ghaniya_Shoaib_Resume.pdf" download>Download Resume</a>
+<a class="btn alt" href="https://www.linkedin.com/in/ghaniyashoaib" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a class="btn alt" href="mailto:ghaniyashoaib@gmail.com">Email</a></div>
+<h2>Featured work</h2>
+<div class="grid">
+<article class="card"><h3><a href="#/work/sooth">Sooth</a></h3><p>A mental health journaling app concept that demands less from users when they have the least to give. UX research and design thinking.</p></article>
+<article class="card"><h3><a href="#/work/bagged">Bagged</a></h3><p>A personal finance tracker for Gen Z, with a design system, 12 screens with states and an AI surface design.</p></article>
+<article class="card"><h3><a href="#/work/bellwether">Bellwether</a></h3><p>A food delivery app focused on transparent pricing, accurate ETAs and a streamlined checkout.</p></article></div>
+<h2>Experience</h2>
+<ul>
+<li>UI/UX Design Intern, FlyRank (Aug 2026 to Sep 2026)</li>
+<li>UI/UX Design Intern, Appverse Technologies (Jul 2026 to Aug 2026). <a href="assets/docs/Appverse_Recommendation_Letter.pdf" target="_blank" rel="noopener">Letter of recommendation (PDF)</a></li>
+<li>Virtual Assistant, BluSky BPO (Jan 2026 to Jun 2026)</li></ul>
+<p><a href="#/about">Full experience and skills</a></p>
+</section>
+
+<section class="page" data-page="work" data-title="Work | Ghaniya Shoaib" hidden>
+<h1>Work</h1>
+<p class="lead">Three case studies and one development project.</p>
+<div class="grid">
+<article class="card"><h3><a href="#/work/sooth">Sooth</a></h3><p>Mental health journaling app. UX research and design thinking.</p></article>
+<article class="card"><h3><a href="#/work/bagged">Bagged</a></h3><p>Personal finance tracker for Gen Z. Design system and screens.</p></article>
+<article class="card"><h3><a href="#/work/bellwether">Bellwether</a></h3><p>Food delivery app. Pricing, ETAs and checkout.</p></article>
+<article class="card"><h3><a href="#/work/musify">Musify</a></h3><p>Music app built with HTML, CSS, JavaScript, Node.js and MySQL. In progress.</p></article></div>
+</section>
+
+<section class="page" data-page="work/sooth" data-title="Sooth case study | Ghaniya Shoaib" hidden>
+<p><a href="#/work">Back to Work</a></p>
+<h1>Sooth</h1>
+<p class="lead">A fictional mental health journaling app designed to make journaling effortless, private and emotionally supportive, especially when users have little time, energy or mental clarity.</p>
+<dl class="meta"><div><dt>Type</dt><dd>Concept project (fictional app)</dd></div><div><dt>Phase covered</dt><dd>UX research and design thinking</dd></div><div><dt>Role</dt><dd class="ph" style="padding:.2rem .5rem">[ADD: role]</dd></div><div><dt>Tools</dt><dd class="ph" style="padding:.2rem .5rem">[ADD: tools]</dd></div></dl>
+<h2>Problem</h2>
+<p>Journaling can support mental well-being, but many people struggle to keep the habit. Blank-page anxiety, perfectionism, lack of time and pressure to write long or meaningful entries get in the way.</p>
+<h2>Audience</h2>
+<ul><li><strong>Aiden</strong>, a graduate student who struggles with late-night anxiety and overthinking.</li><li><strong>Priya</strong>, an emergency-room nurse and single parent who needs journaling to fit into very small pockets of time.</li></ul>
+<h2>Design philosophy</h2>
+<p>The app should demand less from users precisely when they have the least to give.</p>
+<ul><li>Instant entry access</li><li>Adaptive prompts instead of an intimidating blank page</li><li>Support for very short, unfiltered entries</li><li>Privacy reassurance</li><li>Guilt-free journaling habits</li><li>Gentle, non-clinical reflections that help users notice patterns</li></ul>
+<h2>What this phase covers</h2>
+<p>Research synthesis, personas, an emotional journey map, pain points, opportunities and How Might We statements that guide the product design phase.</p>
+<p class="ph">[ADD: images of personas, journey map and HMW statements, with captions and alt text]</p>
+<p class="ph">[ADD: research method and sample size, if applicable]</p>
+</section>
+
+<section class="page" data-page="work/bagged" data-title="Bagged case study | Ghaniya Shoaib" hidden>
+<p><a href="#/work">Back to Work</a></p>
+<h1>Bagged</h1>
+<p class="lead">A personal finance tracker app for Gen Z.</p>
+<dl class="meta"><div><dt>Audience</dt><dd>Gen Z</dd></div><div><dt>Tools</dt><dd>Figma, Stitch AI, Claude</dd></div><div><dt>Role</dt><dd class="ph" style="padding:.2rem .5rem">[ADD: role]</dd></div><div><dt>Timeline / platform</dt><dd class="ph" style="padding:.2rem .5rem">[ADD]</dd></div></dl>
+<h2>Deliverables</h2>
+<ul>
+<li>Phase 1 report: "Bagged: Phase 1 — Design Foundations and Research"</li>
+<li>Design system token specification: type scale, spacing scale and semantic colour tokens in Light and Dark modes</li>
+<li>12 high-fidelity screens with states, generated with Stitch AI prompts and built in Figma. Each was reviewed against the token spec, and off-token colour drift was corrected and logged in an AI-usage document</li>
+<li>AI surface design: interaction model, Shape of AI patterns, failure-state design and a HAX audit</li></ul>
+<p class="ph">[ADD: research method, sample size, key findings]</p>
+<p class="ph">[ADD: final screens with captions and alt text]</p>
+<p class="ph">[ADD: what I learned, next steps]</p>
+</section>
+
+<section class="page" data-page="work/bellwether" data-title="Bellwether case study | Ghaniya Shoaib" hidden>
+<p><a href="#/work">Back to Work</a></p>
+<h1>Bellwether</h1>
+<p class="lead">A food delivery app focused on transparent pricing, accurate ETAs and a streamlined checkout.</p>
+<dl class="meta"><div><dt>Focus</dt><dd>Pricing, ETAs, checkout</dd></div><div><dt>Role</dt><dd class="ph" style="padding:.2rem .5rem">[ADD: role]</dd></div><div><dt>Timeline</dt><dd class="ph" style="padding:.2rem .5rem">[ADD]</dd></div><div><dt>Platform / tools</dt><dd class="ph" style="padding:.2rem .5rem">[ADD]</dd></div></dl>
+<p class="ph">[ADD: research and insights]</p>
+<p class="ph">[ADD: design system and key screens with states]</p>
+<p class="ph">[ADD: what I learned, next steps]</p>
+</section>
+
+<section class="page" data-page="work/musify" data-title="Musify | Ghaniya Shoaib" hidden>
+<p><a href="#/work">Back to Work</a></p>
+<h1>Musify</h1>
+<p class="lead">A music app built as a development project.</p>
+<p><span class="tag">In progress: deployment pending</span></p>
+<h2>Tech stack</h2>
+<p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">MySQL</span></p>
+<h2>Architecture</h2>
+<p>An HTML, CSS and JavaScript front end talks to a Node.js back end, which stores data in a MySQL database.</p>
+<p><strong>Live demo coming soon.</strong></p>
+<p class="ph">[ADD: feature list, screenshots, repository link]</p>
+</section>
+
+<section class="page" data-page="about" data-title="About and Experience | Ghaniya Shoaib" hidden>
+<h1>About and Experience</h1>
+<p class="lead">UI/UX designer and Computer Science student based in Rawalpindi, Pakistan.</p>
+<p>My design work starts with research and moves through systems to screens. Six months of remote B2B outbound sales added experience in client communication, CRM records and follow-through.</p>
+<div class="row"><a class="btn" href="assets/docs/Ghaniya_Shoaib_Resume.pdf" target="_blank" rel="noopener">View Resume</a><a class="btn alt" href="assets/docs/Ghaniya_Shoaib_Resume.pdf" download>Download Resume</a></div>
+<h2>Experience</h2>
+<div class="role"><h3>UI/UX Design Intern, FlyRank</h3><p class="when">Remote, Aug 2026 to Sep 2026</p>
+<ul><li>Completed the FlyRank AI Fluency Program, delivering two portfolio case studies.</li><li>Wrote a design system token specification with Light and Dark modes.</li><li>Directed AI tools to generate 12 high-fidelity screens, reviewed them against the token spec and corrected off-token colour drift, documented in an AI-usage log.</li><li>Produced an AI surface design (interaction model, failure states, HAX audit), an evidence-checker agent spec and a four-stage writing workflow with human review.</li></ul></div>
+<div class="role"><h3>UI/UX Design Intern, Appverse Technologies</h3><p class="when">Remote, Jul 2026 to Aug 2026</p>
+<p>Appverse is a Lahore-based software company that builds mobile apps, websites, portals and custom software for business clients. I began with UI/UX fundamentals and progressed to producing designs including Bagged, Bellwether and Sooth. I turned project requirements into wireframes and screen layouts for team review and worked remotely with the team to align designs with feedback.</p>
+<h4 style="margin:var(--sp-3) 0 var(--sp-2);font-size:var(--fs-base)">Letter of Recommendation, Appverse Technologies</h4>
+<p>Issued by Appverse Technologies, where Ghaniya completed a remote UI/UX design internship (Jul 2026 to Aug 2026).</p>
+<div class="row" style="margin-top:0"><a class="btn" href="assets/docs/Appverse_Recommendation_Letter.pdf" target="_blank" rel="noopener">View Letter</a><a class="btn alt" href="assets/docs/Appverse_Recommendation_Letter.pdf" download>Download Letter</a></div></div>
+<div class="role"><h3>Virtual Assistant, BluSky BPO</h3><p class="when">Remote, Jan 2026 to Jun 2026</p>
+<ul><li>Made outbound calls to business owners across the USA to introduce virtual assistant services.</li><li>Booked qualified prospects into scheduled demos and addressed their questions and hesitations.</li><li>Logged call outcomes in a CRM and maintained call and demo trackers in spreadsheets, following up on pending actions.</li></ul></div>
+<h2>Education</h2>
+<p>SZABIST University, Islamabad. BS Computer Science, Sep 2024 to present.</p>
+<h2>Skills</h2>
+<p><strong>Design:</strong> Figma, design systems, wireframing, UX research synthesis.<br><strong>Development:</strong> HTML, CSS, JavaScript, Node.js, MySQL.<br><strong>Operations and data:</strong> CRM systems, MS Office, Excel, Google Sheets, record keeping, trackers.<br><strong>Communication:</strong> outbound calling, demo booking, objection handling, remote collaboration.</p>
+</section>
+
+<section class="page" data-page="contact" data-title="Contact | Ghaniya Shoaib" hidden>
+<h1>Contact</h1>
+<p class="lead">For internships and entry-level roles.</p>
+<div class="row" style="margin-top:0"><a class="btn" href="mailto:ghaniyashoaib@gmail.com">ghaniyashoaib@gmail.com</a><a class="btn alt" href="https://www.linkedin.com/in/ghaniyashoaib" target="_blank" rel="noopener noreferrer">linkedin.com/in/ghaniyashoaib</a></div>
+<h2>Send a message</h2>
+<form id="form" novalidate>
+<label for="n">Name</label><input id="n" name="name" autocomplete="name" required>
+<label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required>
+<label for="m">Message</label><textarea id="m" name="message" rows="6" required></textarea>
+<input class="hp" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit">Send message</button>
+<p id="status" class="msg" role="status" aria-live="polite"></p>
+</form>
+</section>
+</main>
+
+<footer><div class="wrap">
+<div class="row"><a href="assets/docs/Ghaniya_Shoaib_Resume.pdf" target="_blank" rel="noopener">View Resume</a><a href="assets/docs/Ghaniya_Shoaib_Resume.pdf" download>Download Resume</a><a href="https://www.linkedin.com/in/ghaniyashoaib" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="mailto:ghaniyashoaib@gmail.com">Email</a></div>
+<p>Ghaniya Shoaib, Rawalpindi, Pakistan</p></div></footer>
+
+<script>
+// Theme
+var root=document.documentElement;
+try{var t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
+document.getElementById("theme").onclick=function(){
+  var dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+  var next=dark?"light":"dark";root.dataset.theme=next;
+  try{localStorage.setItem("theme",next)}catch(e){}
+};
+// Router: click handler renders directly (works in sandboxed previews), hash kept in sync when allowed
+var pages=document.querySelectorAll(".page");
+function render(p,first){
+  p=(p||"home").replace(/^#?\/?/,"").replace(/\/$/,"")||"home";
+  var cur=[].find.call(pages,function(s){return s.dataset.page===p});
+  if(!cur){cur=document.querySelector('[data-page="home"]');p="home"}
+  pages.forEach(function(s){s.hidden=s!==cur});
+  document.title=cur.dataset.title;
+  document.querySelectorAll("nav a[href^='#/']").forEach(function(a){
+    var h=a.getAttribute("href").replace("#/","")||"home";
+    var on=h===p||(h==="work"&&p.indexOf("work/")===0);
+    on?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current");
+  });
+  if(!first){window.scrollTo(0,0);document.getElementById("main").focus({preventScroll:true})}
+}
+document.addEventListener("click",function(ev){
+  var a=ev.target.closest&&ev.target.closest("a[href^='#']");
+  if(!a)return;
+  var h=a.getAttribute("href");ev.preventDefault();
+  if(h==="#main"){document.getElementById("main").focus();return}
+  try{history.pushState(null,"",h)}catch(e){try{location.hash=h}catch(e2){}}
+  render(h);
+});
+addEventListener("popstate",function(){render(location.hash)});
+addEventListener("hashchange",function(){render(location.hash)});
+render(location.hash,true);
+// Contact form (Formspree). Replace FORM_ID after creating a form at formspree.io
+var FORM_ID="FORM_ID";
+document.getElementById("form").onsubmit=function(ev){
+  ev.preventDefault();var f=ev.target,s=document.getElementById("status");
+  s.className="msg";
+  if(!f.name.value.trim()||!f.email.value.trim()||!f.message.value.trim()){s.className="msg err";s.textContent="Please fill in your name, email and message.";return}
+  if(!/^\S+@\S+\.\S+$/.test(f.email.value)){s.className="msg err";s.textContent="Enter a valid email address, for example name@example.com.";return}
+  if(f._gotcha.value)return;
+  s.textContent="Sending...";
+  fetch("https://formspree.io/f/"+FORM_ID,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)})
+  .then(function(r){if(!r.ok)throw 0;f.reset();s.textContent="Message sent. Thank you."})
+  .catch(function(){s.className="msg err";s.textContent="The message could not be sent. Email ghaniyashoaib@gmail.com directly."});
+};
+</script>
+</body>
+</html>
