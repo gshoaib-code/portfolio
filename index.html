@@ -237,7 +237,7 @@ addEventListener("popstate",function(){render(location.hash)});
 addEventListener("hashchange",function(){render(location.hash)});
 render(location.hash,true);
 // Contact form (Formspree). Replace FORM_ID after creating a form at formspree.io
-var FORM_ID="https://formspree.io/f/xeaejdvv";
+var FORM_ID="xeaejdvv";
 document.getElementById("form").onsubmit=function(ev){
   ev.preventDefault();var f=ev.target,s=document.getElementById("status");
   s.className="msg";
