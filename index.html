@@ -245,9 +245,13 @@ document.getElementById("form").onsubmit=function(ev){
   if(!/^\S+@\S+\.\S+$/.test(f.email.value)){s.className="msg err";s.textContent="Enter a valid email address, for example name@example.com.";return}
   if(f._gotcha.value)return;
   s.textContent="Sending...";
-  fetch("https://formspree.io/f/"+FORM_ID,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)})
-  .then(function(r){if(!r.ok)throw 0;f.reset();s.textContent="Message sent. Thank you."})
-  .catch(function(){s.className="msg err";s.textContent="The message could not be sent. Email ghaniyashoaib@gmail.com directly."});
+    fetch("https://formspree.io/f/"+FORM_ID,{method:"POST",headers:{Accept:"application/json"},body:new FormData(f)})
+  .then(function(r){return r.json().then(function(d){return {ok:r.ok,d:d}})})
+  .then(function(x){
+    if(!x.ok)throw new Error((x.d.errors&&x.d.errors.map(function(e){return e.message}).join(", "))||x.d.error||"Request rejected");
+    f.reset();s.textContent="Message sent. Thank you.";
+  })
+  .catch(function(err){s.className="msg err";s.textContent="Could not send: "+err.message+". You can email ghaniyashoaib@gmail.com directly."});
 };
 </script>
 </body>
